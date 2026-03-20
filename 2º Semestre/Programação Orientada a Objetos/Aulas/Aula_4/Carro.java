@@ -21,10 +21,52 @@ public class Carro {
         System.out.println("VRUUUUMMMMM");
     }
 
-    //Com retorno
-    public String mostrarMarca(){
-        return this.marca;
+// Sobrecarga do metodo acelerar()
+    public void acelerar(float novaVelocidade){
+        // Format de String = %d (int) %s (String) %f (float e double)
+        String texto = String.format("Nova velocidade: %.2f Km/h ", novaVelocidade);
+        System.out.println(texto);
     }
+
+    //Com retorno
+    public String getMarca(){
+        String marcaUpper = marca.toUpperCase();
+        return marcaUpper;
+    }
+
+    // Getter
+    public String getModelo(){
+        String modeloLower = marca.toLowerCase();
+        return modeloLower;
+    }
+
+    public int getAno(){
+        return ano;
+    }
+
+
+    // Setter
+    public void setAno(int novoAno){
+        if(novoAno > 2000 && novoAno <= 2026)
+            ano = novoAno;
+        else
+            System.out.println("Ano inválido");
+    }
+
+    public void setMarca(String novaMarca){
+        if (novaMarca != null && !novaMarca.isEmpty())
+            marca = novaMarca;
+        else
+            System.out.println("Marca inválida");
+    }
+
+    public void setModelo(String novoModelo){
+        if (novoModelo != null && !novoModelo.isEmpty())
+            modelo = novoModelo;
+        else
+            System.out.println("Modelo inválido");
+    }
+
 
     public void mostrarInfo(){
         System.out.println("Marca: "+this.marca);
