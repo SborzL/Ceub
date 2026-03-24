@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Autor" content = "SborzL">
+    <title>HTML</title>
+    <link rel="stylesheet" href="Styles.css">
+    <link rel="icon" type="image/png" href="html5-logo.png">
+</head>
+<body>
+<header>
+    <nav class="navbar">
+<a href="index.html">HTML</a>
+<a href="wcag.html">WCAG</a>
+<a href="nielsen.html">Heurísticas de Nielsen</a>
+<a href="semantica.html">Tags Semânticas</a>
+    </nav>
+</header>
+<main>
+    <section>
+        <img src="html5-logo.png" alt="HTML5 logo" class="logo"><br><br>
+        <h1>O Que é HTML?</h1>
+        <p>HTML (Hyper Text Markup Language) é a linguagem usada para criar a estruturar paginas da web.<br>
+            Ele não é considerado uma linguagem de programação e sim uma linguagem de marcação.</p>
+    </section>
+
+    <section class="comofunciona">
+        <h1>Como Funciona o HTML?</h1>
+        <p>Ele é formado por <strong>TAGS</strong> que são utilizadas para organizar o conteúdo.<br>
+            As tags dizem ao navegador o que deve ser exibido e ele faz a leitura e mostra as informações, como por exemplo:</p>
+        <ul>
+            <li><strong>&lt;h1&gt;</strong>&nbsp;&nbsp;&nbsp;→ Título Grande</li>
+            <li><strong>&lt;h2&gt;</strong>&nbsp;&nbsp;&nbsp;→ Subtítulo</li> 
+            <li><strong>&lt;h3&gt;</strong>&nbsp;&nbsp;&nbsp;→ Subtítulo Menor</li>    
+            <li><strong>&lt;p&gt;</strong>&nbsp;&nbsp;&nbsp;&nbsp;→ Parágrafo</li>
+            <li><strong>&lt;a&gt;</strong>&nbsp;&nbsp;&nbsp;&nbsp;→ Link</li>
+            <li><strong>&lt;br&gt;</strong>&nbsp;&nbsp;&nbsp;&nbsp;→ Quebra uma Linha</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Exemplo de Código</h2>
+        <pre><code> &lt;h1&gt;Este é um Título&lt;/h1&gt;
+  &lt;p&gt;Este é um parágrafo&lt;/p&gt;</code></pre>
+    </section>
+    
+    <section class="cards">
+  <article class="card">
+    <h2>Exemplo de <code>&lt;code&gt;</code></h2>
+    <p>Use a tag <code>&lt;code&gt;</code> para marcar trechos de código em linha:</p>
+    <pre><code>&lt;code&gt;console.log('Olá mundo');&lt;/code&gt;</code></pre>
+  </article>
+  <br>
+   <section>
+        <h2>Por que HTML é importante?</h2>
+        <p>O HTML é a base de todos os sites. Sem ele, não existiria estrutura na web.<br>
+        Ele trabalha junto com CSS (visual) e JavaScript (interatividade).</p>
+    </section>
+
+    <section>
+    <h2>Estrutura Básica de um Documento HTML</h2>
+    <p>O HTML é organizado em uma estrutura hierárquica, abaixo está o esqueleto padrão do HTML5:</p>
+    <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="pt-BR"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Título da Página&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Conteúdo Principal&lt;/h1&gt;
+    &lt;p&gt;Texto aqui.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<br>
+    <p>Cada tag tem um papel, como por exemplo:<br><br>
+    <code>&lt;head&gt;</code> contém metadados (informações sobre a página)<br>
+    <code>&lt;body&gt;</code> tem o conteúdo visível da página.<br>
+    <code>&lt;title&gt;</code> é o título da página na aba do navegador.<br>
+    <code>&lt;h1&gt;</code> é o título principal da página.<br>
+    <code>&lt;p&gt;</code> é um parágrafo de texto.<br>
+    </p>
+</section>
+
+<section>
+    <h2>Elementos e Atributos</h2>
+    <p>Um <strong>elemento HTML</strong> é composto por tags. Um <strong>atributo</strong> fornece informações extras.</p>
+    <pre><code>&lt;a href="https://exemplo.com" target="_blank"&gt;Clique aqui&lt;/a&gt;
+&lt;img src="imagem.png" alt="Descrição da imagem"&gt;</code></pre>
+    <p><code>href</code>, <code>target</code>, <code>src</code>, <code>alt</code> são <strong>atributos</strong>.</p>
+</section>
+
+<section>
+    <h2>Elementos Inline vs Block</h2>
+    <p><strong>Block:</strong> ocupam toda a largura disponível (ex: &lt;p&gt;, &lt;div&gt;, &lt;h1&gt;)</p>
+    <p><strong>Inline:</strong> ocupam apenas o espaço necessário (ex: &lt;span&gt;, &lt;a&gt;, &lt;code&gt;)</p>
+    <pre><code>&lt;!-- Block --&gt;
+&lt;div&gt;Este div ocupa toda a linha&lt;/div&gt;
+
+&lt;!-- Inline --&gt;
+&lt;span&gt;Este span&lt;/span&gt; fica inline com o texto.</code></pre>
+</section>
+
+<section>
+    <h2>Tags Mais Comuns</h2>
+    <div class="cards">
+        <article class="card">
+            <h3>Estrutura</h3>
+            <ul>
+                <li><code>&lt;header&gt;</code> — Cabeçalho</li>
+                <li><code>&lt;main&gt;</code> — Conteúdo principal</li>
+                <li><code>&lt;footer&gt;</code> — Rodapé</li>
+                <li><code>&lt;section&gt;</code> — Seção temática</li>
+            </ul>
+        </article>
+        <article class="card">
+            <h3>Texto</h3>
+            <ul>
+                <li><code>&lt;h1&gt; a &lt;h6&gt;</code> — Títulos</li>
+                <li><code>&lt;p&gt;</code> — Parágrafo</li>
+                <li><code>&lt;em&gt;</code> — Ênfase</li>
+                <li><code>&lt;strong&gt;</code> — Forte/Bold</li>
+            </ul>
+        </article>
+        <article class="card">
+            <h3>Mídia</h3>
+            <ul>
+                <li><code>&lt;img&gt;</code> — Imagem</li>
+                <li><code>&lt;audio&gt;</code> — Áudio</li>
+                <li><code>&lt;video&gt;</code> — Vídeo</li>
+                <li><code>&lt;iframe&gt;</code> — Conteúdo externo</li>
+            </ul>
+        </article>
+    </div>
+</section>
+
+<section>
+    <h2>Boas Práticas ao Escrever HTML</h2>
+    <ul>
+        <li>✓ Use tags semânticas quando possível</li>
+        <li>✓ Indente seu código para melhor legibilidade</li>
+        <li>✓ Sempre feche as tags corretamente</li>
+        <li>✓ Use atributos <code>alt</code> em imagens (acessibilidade)</li>
+        <li>✓ Mantenha HTML separado de CSS e JavaScript</li>
+        <li>✗ Não use <code>&lt;br&gt;</code> apenas para espaçamento (use CSS)</li>
+        <li>✗ Não use <code>onclick</code> inline (use JavaScript externo)</li>
+    </ul>
+</section>
+
+<p>Se quiser aprender mais sobre HTML visite o site <a href="https://www.w3schools.com/html/default.asp" target="_blank">W3 Schools HTML Tutorial</a></p>
+
+</main>
+<footer>
+    <section>
+        <h2 class="referencias">Referências Usadas</h2>
+        <ul>
+            <li>
+                <a href="https://www.w3schools.com/html/html_blocks.asp" target="blank">W3 Schools HTML Tutorial</a>
+            </li>
+            <li>
+                <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="blank">W3 WCAG 2 Overview</a>
+            </li>
+            <li>
+                <a href="https://color.adobe.com/pt/create/color-contrast-analyzer" target="blank">Adobe Color Contrast Analyzer</a>
+            </li>
+            <li>
+                <a href="https://www.nngroup.com/articles/ten-usability-heuristics/" target="blank">NNGroup 10 Usability Heuristics</a>
+            </li>
+            <li>
+                <a href="https://gemini.google.com/">Google Gemini</a>
+            </li>
+             <li>
+                <a href="https://favicon.io/favicon-generator/">Favicon Generator</a>
+            </li>
+        </ul>
+    </section>
+<p class="creditos">© 2026 - SborzL</p>
+</footer>
+</body>
+</html>
