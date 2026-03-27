@@ -21,20 +21,25 @@ public class Carro {
         System.out.println("VRUUUUMMMMM");
     }
 
-// Sobrecarga do metodo acelerar()
+    // Sobrecarga do metodo acelerar()
     public void acelerar(float novaVelocidade){
         // Format de String = %d (int) %s (String) %f (float e double)
         String texto = String.format("Nova velocidade: %.2f Km/h ", novaVelocidade);
-        System.out.println(texto);
+        System.out.println(texto); 
     }
 
-    //Com retorno
+    // Método privado
+    private String maiusculo(String txt){
+        return txt.toUpperCase();
+    }
+
+     //Com retorno
+    // Getter
     public String getMarca(){
         String marcaUpper = marca.toUpperCase();
         return marcaUpper;
     }
 
-    // Getter
     public String getModelo(){
         String modeloLower = marca.toLowerCase();
         return modeloLower;
