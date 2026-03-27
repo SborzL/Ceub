@@ -14,6 +14,10 @@ public class Main{
         carro_1.setMarca("");
         System.out.println(carro_1.getMarca());
         carro_1.setModelo("Gallardo");
+        carro_1.setModelo(null);
+        carro_1.setModelo("");
+        System.out.println(carro_1.getModelo());
         carro_1.mostrarInfo();
+        System.out.println(carro_1.getMarca());
     }
 }
