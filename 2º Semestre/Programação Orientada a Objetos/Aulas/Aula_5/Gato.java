@@ -6,9 +6,16 @@ public class Gato extends Animal{
         this.raca = raca;
     }
 
-    //Sobrescrita do método emitirSon(Override)
+    //Sobrescrita do método emitirSom(Override)
     @Override
     public void emitirSom(){
+        super.emitirSom();
         System.out.println("Gato disse: Miau!");
+    }
+
+    @Override
+    public void mostrarInfo(){
+        super.mostrarInfo();
+        System.out.println("Raça: "+raca);
     }
 }
