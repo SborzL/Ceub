@@ -6,13 +6,20 @@ public class Cachorro extends Animal{
         this.raca = raca;
     }
 
-    //Sobrescrita do método emitirSon(Override)
+    //Sobrescrita do método emitirSom(Override)
     @Override
     public void emitirSom(){
         System.out.println("Cachorro disse: Au Au!");
     }
 
+    @Override
+    public void mostrarInfo(){
+        super.mostrarInfo();
+        System.out.println("Raça: "+raca);
+    }
+
     public void abanarCauda(){
         System.out.println(nome+" está abanando a cauda.");
     }
+    
 }
