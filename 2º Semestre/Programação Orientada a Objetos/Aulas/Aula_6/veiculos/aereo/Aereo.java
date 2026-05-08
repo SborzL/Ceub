@@ -7,10 +7,10 @@ public abstract class Aereo extends Veiculo{
 
     public Aereo(String nome){
         super(nome);
-        this.altitude = altitude;
+        this.altitude = 0;
     }
 
-    //Métodos Abstratos
-    public abstract void ganharAltitude(double incremento);
-    public abstract void perderAltitude(double decremento);
+    // Métodos Abstratos
+    public abstract void ganharAltitude(double incremento); 
+    public abstract void perderAltitude(double decremento); 
 }

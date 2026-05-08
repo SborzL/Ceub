@@ -9,16 +9,16 @@ public abstract class Veiculo {
         this.velocidade = 0;
     }
 
-    public void acelerear(double incremento){
+    public void acelerar(double incremento){
         if(incremento > 0){
             velocidade += incremento;
         }
     }
 
-    public void desacelerar(double decremento){
-        if(decremento > 0){
-            velocidade -= decremento;
-            if(velocidade <0){
+    public void desacelerar(double drecremento){
+        if(drecremento > 0){
+            velocidade -= drecremento;
+            if(velocidade < 0){
                 velocidade = 0;
             }
         }
@@ -29,6 +29,6 @@ public abstract class Veiculo {
 
     public void mostrarInfo(){
         System.out.println("Nome: "+nome);
-        System.out.println("Velocidade:"+velocidade);
+        System.out.println("Velocidade: "+velocidade);
     }
 }

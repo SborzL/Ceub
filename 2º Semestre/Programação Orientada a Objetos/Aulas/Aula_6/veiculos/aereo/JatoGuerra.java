@@ -1,6 +1,5 @@
 package veiculos.aereo;
 
-
 public class JatoGuerra extends Aereo{
     protected int misseis;
 
@@ -11,31 +10,31 @@ public class JatoGuerra extends Aereo{
 
     @Override
     public void mover(){
-        System.out.println(String.format("O Jato de Guerra %s está se movendo com a velocidade %.2f km/h a uma altitude de %.2f metros",nome,velocidade,altitude));
+        System.out.println(String.format("O Jato %s está se movendo com a velocidade %.2f km/h a uma altitude de %.2f pés.", nome, velocidade, altitude));
     }
-
+    
     @Override
     public void ganharAltitude(double incremento){
-        if (incremento > 0)altitude += incremento;
+        if(incremento > 0) altitude += incremento;
     }
 
     @Override
     public void perderAltitude(double decremento){
-        if(decremento > 0){
+        if (decremento > 0){
             altitude -= decremento;
-            if (altitude < 0) altitude = 0;
+            if(altitude < 0) altitude = 0;
         }
     }
 
-    public void atirarMissil(){
-        misseis-=1;
-        System.out.println("Míssil atirado. Mísseis restantes: "+misseis);
+    public void atirarMissel(){
+        misseis -=1;
+        System.out.print("Míssil atirado. Misséis restantes:"+ misseis);
     }
 
     @Override
     public void mostrarInfo(){
         super.mostrarInfo();
-        System.out.println("Mísseis: "+misseis);
-        System.out.println("Altitude: "+altitude);
+        System.out.println("Altitude: "+ altitude);
+        System.out.println("Mísseis: "+ misseis);
     }
 }
